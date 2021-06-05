@@ -1,11 +1,11 @@
 <template>
     <div>
         <div class="container">
-            <div class="row justify-content-center searchbar">
+            <form class="row justify-content-center searchbar" @submit.prevent="findVideo()">
                 <span v-if="emptyInput">Incorrect input!</span>
                 <input v-model="inputLink" class="col col-10 customInput" id="test1" type="text" placeholder="Copy video link here!"> 
                 <a @click="findVideo()" class="btn"><fa :icon="['fas', 'search']" /></a>
-            </div>
+            </form>
         </div>
         <loading v-if="showLoad"/>
     </div>

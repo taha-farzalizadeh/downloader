@@ -83,7 +83,6 @@ export default {
         '$store.state.videoDetails':{
             handler(){
                 this.videoDetails = this.$store.state.videoDetails
-                console.log(this.videoDetails)
             },
             deep:true
         }

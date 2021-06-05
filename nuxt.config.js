@@ -51,11 +51,12 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    proxy: true
+    // proxy: true
+    baseURL:"http://fastapi-youtube-downloader.herokuapp.com/singlestreamj/?link="
   },
-  proxy: {
-    '/api/': { target:'http://fastapi-youtube-downloader.herokuapp.com', pathRewrite: {'^/api/': ''} },
-  },
+  // proxy: {
+  //   '/api/': { target:'http://fastapi-youtube-downloader.herokuapp.com', pathRewrite: {'^/api/': ''} },
+  // },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

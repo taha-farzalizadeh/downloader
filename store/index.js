@@ -11,7 +11,7 @@ export const mutations = {
 
 export const actions = {
     async getVideo({commit},vidLink){
-        const video = await axios.get("/api/singlestreamj/?link="+vidLink)
+        const video = await axios.get(`${this.$axios.defaults.baseURL}`+vidLink)
         commit("setVideo" , video.data)
     }
 }
