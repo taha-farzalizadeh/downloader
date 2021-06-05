@@ -1,0 +1,24 @@
+.my-header{
+    padding-top: 1rem;
+    strong{
+        padding-left: 4rem;
+    }
+    padding-bottom: 0;
+}
+.navbar-container{
+    padding: 3rem 0;
+    padding-bottom: 0;
+}
+.header-bar{
+    background-image: linear-gradient(to right,#f53844,#42378f);
+    box-shadow: 3px 3px 2px rgb(0 0 0/10%);
+    padding: 5rem 0;
+    text-align: center;
+    color: $text-color;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    h2{
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+}

@@ -1,0 +1,56 @@
+.searchbar{
+    position: relative;
+    top: -1.8rem;
+    a.btn{
+        font-size: 1.4rem;
+        position: absolute;
+        color: $buttons-color;
+        right: 5.2rem;
+        transition: 0.2s;
+        &:active{
+            font-size: 1.2rem;
+        }
+    }
+    span{
+        position:absolute ;
+        margin-top: 3.5rem;
+        left: 6rem;
+        color: $buttons-color;
+    }
+}
+.customInput{
+   height: 3rem;
+   width: 100%;
+   outline: none;
+   border: 2px solid transparent;
+   transition: 0.5s;
+   border-radius: 0.3rem;
+   box-shadow: 0 2px 0 rgb(90 97 105 / 11%),
+               0 8px 16px rgb(90 97 105 / 19%), 
+               0 10px 10px rgb(90 97 105 / 10%), 
+               0 7px 70px rgb(90 97 105 / 10%);
+   &.empty{
+       border: 2px solid rgba(231, 29, 54 , 0.7);
+        box-shadow: 0 2px 0 rgb(231 29 54 / 11%),
+                    0 8px 16px rgb(231 29 54 / 19%), 
+                    0 10px 10px rgb(231 29 54 / 10%), 
+                    0 7px 70px rgb(231 29 54 / 10%);
+   } 
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .searchbar a.btn{
+        right: 2.2rem;
+    }
+    .searchbar span{
+        left:3rem
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .searchbar a.btn{
+        right: 5.7rem;
+    } 
+    .searchbar span{
+        left:7rem
+    }
+}

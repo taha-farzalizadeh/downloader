@@ -1,0 +1,105 @@
+.details-card{
+    margin-bottom: 15rem;
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 
+                0 4px 8px rgb(90 97 105 / 12%), 
+                0 10px 10px rgb(90 97 105 / 6%), 
+                0 7px 70px rgb(90 97 105 / 10%);
+    .details-header{
+        padding: $card-padding;
+        border-bottom: 1px solid rgba(1, 22, 39,.25);
+        margin: 0;
+    }
+    .details-body{
+        padding: $card-padding;
+        img{
+            border-radius: 0.5rem;
+            width: 100%;
+        }
+    }
+    form{
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+.video-info{
+    padding-right: 1rem;
+    p{
+        word-break: break-all;
+    }
+}
+
+#select-type{
+    cursor: pointer;
+    outline: 0;
+    height: 2.2rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(1, 22, 39,.25);
+    box-shadow: 0 2px 0 rgb(46 196 182 / 11%), 
+                0 2px 5px rgb(46 196 182 / 12%), 
+                0 3px 5px rgb(46 196 182 / 6%), 
+                0 7px 40px rgb(46 196 182 / 10%);
+    line-height: 1rem;
+    padding: 0.2rem 0.5rem;
+    color:$black;
+    transition: box-shadow .25s cubic-bezier(.27,.01,.38,1.06),
+                border .25s cubic-bezier(.27,.01,.38,1.06);
+    &:focus{
+        border-color: #007bff;
+        box-shadow: 0 0.5rem 0.9rem rgb(0 123 255 / 10%), 0 0.25rem 0.2rem rgb(0 0 0 / 6%);
+    }
+}
+a.down-but{
+    font-size: 0.8rem;
+    margin-bottom:0.35rem;
+    height: 2.2rem;
+    margin-right: 0.3rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border-right: 2px solid rgba(1, 22, 39 , 0.3);
+    width: 5rem;
+}
+a.link-but{
+    font-size: 0.8rem;
+    margin-bottom:0.35rem;
+    height: 2.2rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    margin-left: -0.34rem;
+    width: 5rem;
+}
+.empty{
+    border-color: #c4183c !important;
+    box-shadow: 0 9px 13px rgb(196 24 60 / 20%) !important;
+}
+.video-down-buttons{
+    display: flex;
+    justify-content: center;
+}
+.copyNotif{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 3rem;
+    margin: 0 auto;
+    background-color: #00bf9a;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 3rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: 0.7s;
+    z-index: 1000;
+    p{
+        padding: 0 0.8rem;
+        margin-bottom: 0;
+    }
+    &.show{
+        opacity: 1!important;
+    }
+}
