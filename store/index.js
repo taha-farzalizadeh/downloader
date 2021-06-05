@@ -11,7 +11,7 @@ export const mutations = {
 
 export const actions = {
     async getVideo({commit},vidLink){
-        const video = await axios.get("/api/"+vidLink)
+        const video = await axios.get("http://fastapi-youtube-downloader.herokuapp.com/singlestreamj/?link="+vidLink)
         commit("setVideo" , video.data)
     }
 }
