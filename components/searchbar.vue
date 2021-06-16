@@ -40,6 +40,7 @@ export default {
                     this.showLoad=true
                     await this.$store.dispatch("getVideo",this.inputLink)
                     this.showLoad=false
+                    document.querySelector('.main-footer').style.position = 'relative'
                 }catch (error){
                     const input = document.querySelector('.customInput')
                     if(input){
